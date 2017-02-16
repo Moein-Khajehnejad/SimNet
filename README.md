@@ -1,17 +1,17 @@
 # SimNet
 This is the code which implements "SimNet", a new method for network representation that is explained in our paper:
-SimNet: Similarity-based Network Embeddings with Mean Commute Time.
-Moein Khajehnejad and Lu Wei.
+SimNet: Similarity-based Network Embeddings with Mean Commute Time.\n
+Moein Khajehnejad and Lu Wei.\n
 The code can be applied to any arbitrary graph.
 #Code Usage
 To run this source code use "Run_SimNet.m" function. Entries to this function are the network's Adjacency Matrix and the appeald dimension for the final representation of the network. Simply add all the included functions and run the code.
 The output is a matrix representing the network.
 #Note
-a. L2 norm imposition not needed.
-b. SimNet can be applied to un\weighted and un\directed graphs. For a directed graph, add adjacency matrix and its transpose and use the resulted matrix as the first entry to Run_SimNet.
+a. L2 norm imposition not needed.\n
+b. SimNet can be applied to un\weighted and un\directed graphs. For a directed graph, add adjacency matrix and its transpose and use the resulted matrix as the first entry to Run_SimNet.\n
 c. 'Matrix Alpha' is used as a dynamic damping factor in calculating the similarity; Though if you wish to use a constant damping factor, simply replace all the elements of Matrix Alpha with the constant value.
 #Cite
-In case you found this code useful in your work, please kindly cite our paper:
+In case you found this code useful in your work, please kindly cite our paper:\n
 SimNet: Similarity-based Network Embeddings with Mean Commute Time.
 Moein Khajehnejad and Lu Wei.
 #Contact
