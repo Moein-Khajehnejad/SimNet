@@ -10,7 +10,7 @@ The output is a matrix representing the network.
 #Note
 a. L2 norm imposition not needed.  
 b. SimNet can be applied to un\weighted and un\directed graphs. For a directed graph, add adjacency matrix and its transpose and use the resulted matrix as the first entry to Run_SimNet.  
-c. _Matrix Alpha_ is used as a dynamic damping factor in calculating the similarity; Though if you wish to use a constant damping factor, simply replace all the elements of Matrix Alpha with the constant value.  
+c. _Matrix Alpha_ is used as a constant damping factor in calculating the similarity; Though if you wish to use a dynamic damping factor, simply replace this matrix with the equations illustrated in our paper.  
 #Cite
 In case you found this code useful in your work, please kindly cite our paper:  
 SimNet: Similarity-based Network Embeddings with Mean Commute Time.  
