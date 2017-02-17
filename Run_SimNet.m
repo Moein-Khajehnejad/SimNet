@@ -8,17 +8,16 @@ W = Adjacency - diag(diag(Adjacency));  %diagonal elements must be 0
 D = diag(sum(W), 0); %degree matrix
 L_plus=pinv(D-Adjacency); %Moore-Penrose pseudoinverse
 
+%%This section is used in case you wish to use dynamic damping factors.Please refer to our paper for more information.
 %Calculating Matrix Alpha
-Alpha=zeros(N,N);
-for i=1:N
-    for j=1:N
-        Alpha(i,j)=(atan(L_plus(i,j))+pi/2)/pi;
-    end
-end
-
-%Similarity Matrix Using Dynamic Damping Factors
-%This Similarity can also be calculated using a constant matrix Alpha;
-%Please refer to our paper for more information.
+%Alpha=zeros(N,N);
+%for i=1:N
+    %for j=1:N
+        %Alpha(i,j)=(atan(L_plus(i,j))+pi/2)/pi;
+    %end
+%end
+%As a more simple case a constant matrix can be used as Alpha
+Alpha = 0.5;
 S  = Simillarity(Alpha,P,Adjacency);
 S=(S+S')/2;% making symmetric matrix
 
