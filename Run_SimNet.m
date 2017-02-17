@@ -8,7 +8,7 @@ W = Adjacency - diag(diag(Adjacency));  %diagonal elements must be 0
 D = diag(sum(W), 0); %degree matrix
 L_plus=pinv(D-Adjacency); %Moore-Penrose pseudoinverse
 
-%%This section is used in case you wish to use dynamic damping factors.Please refer to our paper for more information.
+%This section is used if you wish to use dynamic damping factors.Please refer to our paper for more information.
 %Calculating Matrix Alpha
 Alpha=zeros(N,N);
 %for i=1:N
