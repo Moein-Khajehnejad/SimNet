@@ -10,7 +10,7 @@ L_plus=pinv(D-Adjacency); %Moore-Penrose pseudoinverse
 
 %%This section is used in case you wish to use dynamic damping factors.Please refer to our paper for more information.
 %Calculating Matrix Alpha
-%Alpha=zeros(N,N);
+Alpha=zeros(N,N);
 %for i=1:N
     %for j=1:N
         %Alpha(i,j)=(atan(L_plus(i,j))+pi/2)/pi;
