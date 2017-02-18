@@ -19,7 +19,6 @@ Alpha=zeros(N,N);
 %As a more simple case a constant matrix can be used as Alpha
 Alpha = 0.5;
 S  = Simillarity(Alpha,P,Adjacency);
-S=(S+S')/2;% making symmetric matrix
 
 k=1; %constant,no need to use higher steps
 CoMat= CoOccMat(S, length(S), k); % co-occurrence matrix from graph
