@@ -1,6 +1,6 @@
 function S = Simillarity(Alpha,P,A)
     N=length(A);
-    S=inv(eye(N)-Alpha.*P);
+    S=inv(eye(N)-Alpha.*A);
     %If Alpha is not a constant matrix you can refer to our paper and simply replace the equation for 
     %similarity matrix. 
     %[V,D] = eig(A);
