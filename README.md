@@ -16,6 +16,6 @@ d. _Matrix Alpha_ is used as a constant damping factor in calculating the simila
 #Cite
 In case you found this code useful in your work, please kindly cite our paper:  
 SimNet: Similarity-based Network Embeddings with Mean Commute Time.  
-Moein Khajehnejad and Lu Wei.
+Moein Khajehnejad and Wei Lu.
 #Contact
 If you have any questions regarding the code, feel free to contact me on moein.khajehnejad@gmail.com
