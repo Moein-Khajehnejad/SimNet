@@ -2,7 +2,8 @@ function NetRep= Run_SimNet(Adjacency,dimension)
 
 %Adjacency Matrix Is Loaded
 P=ScaleMat(Adjacency); %matrix is scaled
-N=length(Adjacency); 
+N=length(Adjacency);
+Adjacency=Adjacency/(N*max(max(Adjacency)));
 
 W = Adjacency - diag(diag(Adjacency));  %diagonal elements must be 0
 D = diag(sum(W), 0); %degree matrix
