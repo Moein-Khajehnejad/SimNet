@@ -5,7 +5,8 @@ function S = Simillarity(Alpha,A,c)
    
     else     % For a Dynamic Alpha 
         S=eye(N);
-        for i=1:20
+        for i=1:20     %Experiments show that after 20 steps the calculated similarity matrix does not show a noticable diference. 
+        %You can set this number mannualy
             Alpha_mult = dotMult(Alpha,i);
             S= S+ Alpha_mult.* A^(i);
         end
