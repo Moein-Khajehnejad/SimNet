@@ -14,7 +14,7 @@ L_plus=pinv(D-Adjacency); %Moore-Penrose pseudoinverse
 Alpha=zeros(N,N);
 if (c)
 Alpha = 0.5;
-end
+
 
 else
 for i=1:N
