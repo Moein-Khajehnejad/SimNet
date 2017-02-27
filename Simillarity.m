@@ -1,14 +1,15 @@
-function S = Simillarity(Alpha,A)
+function S = Simillarity(Alpha,A,c)
     N=length(A);
-    S=inv(eye(N)-Alpha.*A);
-    %If Alpha is not a constant matrix you can refer to our paper and simply replace the equation for 
-    %similarity matrix. 
-    % For a Dynamic Alpha Run the following:
-    %S=eye(N)+Alpha.*A + Alpha.*Alpha.*A^2+Alpha.*Alpha.*Alpha.*A^3;
+    if(c==1) %for a constant Alpha
+        S=inv(eye(N)-Alpha.*A);
    
-    %[V,D] = eig(A);
-    %S=zeros(N,N);
-    %for each k=1:N
-    % calculate S(i,j)=S(i,j)+(V(i,k)*(V(k,j))^(-1))*(1/(1-Alpha(i,j)*D(k,k)));;
-  
+    else     % For a Dynamic Alpha 
+        S=eye(N);
+        for i=1:20
+            Alpha_mult = dotMult(Alpha,i);
+            S= S+ Alpha_mult.* A^(i);
+        end
+    
+    end
+   
 end
