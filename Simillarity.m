@@ -5,7 +5,7 @@ function S = Simillarity(Alpha,A,c)
    
     else     % For a Dynamic Alpha 
         S=eye(N);
-        for i=1:20     
+        for i=1:10     
             Alpha_mult = dotMult(Alpha,i);
             S= S+ Alpha_mult.* A^(i);
         end
