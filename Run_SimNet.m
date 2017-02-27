@@ -24,7 +24,7 @@ for i=1:N
 end
 
 
-S  = Simillarity(Alpha,Adjacency);
+S  = Simillarity(Alpha,Adjacency,c);
 
 k=1; %constant,no need to use higher steps
 CoMat= CoOccMat(S, length(S), k); % co-occurrence matrix from graph
