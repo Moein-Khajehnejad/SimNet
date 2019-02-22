@@ -1,7 +1,7 @@
 # SimNet
 This is the code which implements **SimNet**, a new method for network representation that is explained in our paper:  
 >SimNet: Similarity-based Network Embeddings with Mean Commute Time.  
->Moein Khajehnejad and Wei Lu.  
+>Moein Khajehnejad.  
 
 The code can be applied to any arbitrary graph.  
 # Code Usage
@@ -16,6 +16,6 @@ c. SimNet can be applied to un\weighted and undirected graphs. For a directed gr
 # Cite
 In case you found this code useful in your work, please kindly cite our paper:  
 SimNet: Similarity-based Network Embeddings with Mean Commute Time.  
-Moein Khajehnejad and Wei Lu.
+Moein Khajehnejad.
 # Contact
 If you have any questions regarding the code, feel free to contact me on moein.khajehnejad@gmail.com
