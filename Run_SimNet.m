@@ -23,7 +23,6 @@ for i=1:N
     end
 end
 
-
 S  = Simillarity(Alpha,Adjacency,c);
 
 k=1; %constant,no need to use higher steps
