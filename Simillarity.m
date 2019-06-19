@@ -3,7 +3,7 @@ function S = Simillarity(Alpha,A,c)
     if(c==1) %for a constant Alpha
         S=inv(eye(N)-Alpha.*A);
    
-    else     % For a Dynamic Alpha 
+    else      % For a Dynamic Alpha 
         S=eye(N);
         for i=1:10     
             Alpha_mult = dotMult(Alpha,i);
