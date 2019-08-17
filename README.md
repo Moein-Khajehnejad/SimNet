@@ -1,5 +1,5 @@
 # SimNet
-This is the code which implements **SimNet**, a new method for network representation that is explained in our paper:  
+This is the code which implements **SimNet**, a new method for network representation that is explained in this paper:  
 >SimNet: Similarity-based Network Embeddings with Mean Commute Time.  
 >Moein Khajehnejad.  
 
@@ -15,7 +15,9 @@ b. L2 norm imposition not needed.
 c. SimNet can be applied to un\weighted and undirected graphs. For a directed graph, add adjacency matrix and its transpose and use the resulted matrix as the first entry to Run_SimNet.   
 # Cite
 In case you found this code useful in your work, please kindly cite our paper:  
-SimNet: Similarity-based Network Embeddings with Mean Commute Time.  
+ 
+[SimNet: Similarity-based Network Embeddings with Mean Commute Time](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0221172).
+
 Moein Khajehnejad.
 # Contact
 If you have any questions regarding the code, feel free to contact me on moein.khajehnejad@gmail.com
